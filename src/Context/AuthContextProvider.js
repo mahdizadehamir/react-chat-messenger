@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth } from "../components/firebase";
 import { onAuthStateChanged } from "firebase/auth";
-const AuthContext = React.createContext();
+export const AuthContext = React.createContext();
 const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(false);
   const [loading, setLoading] = useState(true);
